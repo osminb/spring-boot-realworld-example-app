@@ -19,7 +19,7 @@ The GraphQL schema is https://github.com/gothinkster/spring-boot-realworld-examp
 And this implementation is using [dgs-framework](https://github.com/Netflix/dgs-framework) which is a quite new java graphql server framework.
 # How it works
 
-The application uses Spring Boot (Web, Mybatis).
+The application uses Spring Boot 2.7.18 (Web, Mybatis).
 
 * Use the idea of Domain Driven Design to separate the business term and infrastructure term.
 * Use MyBatis to implement the [Data Mapper](https://martinfowler.com/eaaCatalog/dataMapper.html) pattern for persistence.
@@ -45,6 +45,13 @@ It uses a ~~H2 in-memory database~~ sqlite database (for easy local test without
 # Getting started
 
 You'll need Java 11 installed.
+
+**Current versions:**
+- Spring Boot: 2.7.18
+- MyBatis Spring Boot Starter: 2.3.2
+- Netflix DGS GraphQL: 4.9.21
+
+See [DEPRECATION_NOTES.md](DEPRECATION_NOTES.md) for information about future Spring Boot 3.x migration.
 
     ./gradlew bootRun
 
